@@ -10,23 +10,9 @@
     <link rel="stylesheet" href="country_pick_flags/country-picker-flags/build/css/countrySelect.css"/>
     <link rel="stylesheet" href="country_pick_flags/country-picker-flags/build/css/demo.css"/> 
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src = "country_pick_flags/country-picker-flags/build/js/countrySelect.js"></script>
     <script src="Homepage.js"></script>
-
- 
-   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-   <!-- <script src="country-picker-flags/country-picker-flags/build/js/countrySelect.js"></script> -->
-   <script src = "country_pick_flags/country-picker-flags/build/js/countrySelect.js"></script>
-  <script>
-    $("#country_selector").countrySelect({
-      defaultCountry: "ng",
-      onlyCountries: ["ng", "us", "rw", "gh", "gb", "sn", "za", "ug"],
-      responsiveDropdown: true,
-      preferredCountries: ["ng", "gb", "us"],
-    });
-
-
-
-  </script>
   </head>
 
   <body>
@@ -540,6 +526,23 @@
         <p class="copywright_div_a">	&#169;Dec 2023 by Ekundayo Mayowa 07034325810</p>
     
     </div>
+ 
+
+ 
+  
+   <!-- <script src="country-picker-flags/country-picker-flags/build/js/countrySelect.js"></script> -->
+
+  <script>
+    $("#country_selector").countrySelect({
+      defaultCountry: "ng",
+      onlyCountries: ["ng", "us", "rw", "gh", "gb", "sn", "za", "ug"],
+      responsiveDropdown: true,
+      preferredCountries: ["ng", "gb", "us"],
+    });
+
+
+
+  </script>
        
     
   
