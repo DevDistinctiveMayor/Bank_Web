@@ -102,10 +102,10 @@ overflow-x: hidden;
   margin-top: -1%;
   position: absolute;
 }
-.img1{
+.img1 {
   width: 100%;
   height: 100%;
-  margin-top: 7%;
+  margin-top: 6%;
 }
 .inter_Bank p {
   color: #ffffff;
@@ -1783,6 +1783,14 @@ input, select {
 /* 48em = 768px */
 
 @media (max-width: 60em) {
+  .header {
+    background-color: rgb(24, 0, 82);
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    height: 6%;
+}
 
 
 
@@ -2079,12 +2087,14 @@ input, select {
   /* margin-right: 10%; */
   
  }
-.explore_more_div{
-margin-left: 30%;
+ .explore_more_div {
+  margin-left: 30%;
+  margin-top: 6%;
+  height: 450px;
 }
  .explore_more div img {
-  height: 40%;
-  width: 48%;
+  height: 65%;
+  width: 57%;
   /* margin-left: -15%; */
 }
 .explore_more1 {
@@ -2099,10 +2109,13 @@ margin-left: 30%;
   position: relative;
   margin-top: -7%;
   height: 32rem;
-  width: 45%;
+  width: 55%;
   margin-left: 0;
   left: 0;
   color: white;
+}
+.explore_more1 div{
+  width: 77%;
 }
 /* .actv {
 
