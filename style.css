@@ -3,15 +3,13 @@ body {
   padding: 0px;
 overflow-x: hidden;
 }
-
-
 .head {
   background-color: rgb(60, 50, 118);
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
   position: fixed;
   width: 100%;
   z-index: 1;
-  margin-top: 3%;
+  margin-top: 2.6%;
   padding-top: 2%;
   display: flex;
 }
@@ -1723,7 +1721,7 @@ input, select {
     position: fixed;
     width: 100%;
     z-index: 3;
-    height: 6%;
+  
 }
 
 
@@ -1848,13 +1846,9 @@ input, select {
   width: 100%;
   z-index: 1;
   display: flex;
-  padding-bottom: 7px;
+  padding-bottom: 0px;
+  margin-top: 4%;
 }
-  
-
-
-
-  
 .head ul {
   margin-left: 0%;
   padding: 0;
@@ -2559,17 +2553,16 @@ margin-left: -20%;
     position: fixed;
     width: 100%;
     z-index: 3;
-    height: 12%;
 }
 .inter_Bank {
   margin-left: -56%;
   margin-top: 27px;
   width: 15%;
-  height: 10%;
+  /* height: 10%; */
 }
 .input_search input {
   margin-top: 3.2%;
-  height: 10%;
+  /* height: 10%; */
 }
   .comimg {
   
@@ -3045,6 +3038,12 @@ margin-left: -20%;
   .inter_Bank {
     margin-top: 2%;
     margin-left: -77%;
+    height: 6%;
+}
+.input_search input {
+  margin-top: 2%;
+  width: 15%;
+  height: 6%;
 }
 .carousel-container {
   margin-top: 5%;
