@@ -1093,7 +1093,7 @@ z-index: 1;
   margin-bottom: 5%;
   width: 80%;
   margin-left: 10%;
-  margin-top: 3%;
+  margin-top: -12%;
 }
 
 .atm_locator_div {
@@ -1131,7 +1131,7 @@ z-index: 1;
 }
 .footer{
   background-color:  rgb(24, 0, 82);
-  height: 80%;
+  height: auto;
 }
 .footer_div {
   padding-top:5%;
@@ -1149,7 +1149,7 @@ z-index: 1;
 }
 .footer div div  h3{
   color: #ffffff;
-  margin-left: 16%;
+  margin-left: 19%;
 }
 .footer div div ul li {
   line-height: 30px;
@@ -1157,14 +1157,15 @@ z-index: 1;
 .footer div div ul li a{
   text-decoration: none;
   color: #c0baba;
-  /* margin-left: 2%; */
+  margin-left: 0%;
 
 }
 .last{
-  margin-left: 10%;
+height: 11%;
+background-color:  rgb(29, 82, 0);
 }
 .media_box{
-  margin-left: -10%;
+  margin-left: 15%;
 }
 .media_box_div{
   background-color:rgba(215, 236, 255, 0.907);;
@@ -1181,7 +1182,7 @@ z-index: 1;
 .media_box_div div{
   margin-top: 3%;
   display: flex; 
-margin-left: 13%;
+
 }
 .media_box div::after {
   content: "";
@@ -1545,64 +1546,56 @@ input, select {
   margin-left: 0%;
   height: 10px;
 }
-
-
 }
+
+
 @media screen and (max-width: 1137px){
-  .menu1 {
-    margin-right: 9%;
-    width: 53%;
-  }
-  .search_div{
-    margin-left: -3.7%;
-  }
-    
+.menu1 {
+  margin-right: 9%;
+  width: 53%;
+}
+.search_div{
+  margin-left: -3.7%;
+}    
 }
 
- @media screen and (max-width: 1164px){
-
+@media screen and (max-width: 1164px){
 .carousel-container {
-    margin-top: 7%;
+  margin-top: 7%;
 }
 .img_size_1 {
-    width: 315px;
+  width: 315px;
 }
-
-
 }
-
-
-
-
 
 
 @media screen and (max-width: 1111px){
-  .chat{
-    margin-top: -9.3%;
+.chat{
+  margin-top: -9.3%;
 }
-  .img_size_1 {
-    width: 299px;
+.img_size_1 {
+  width: 299px;
 }
 .footer div div {
   margin-left: -2%;
 }
-
-
 .media_box_div {
-    width: 88%;
+  width: 88%;
 }
 .comimg {
   margin-left: 12rem;
-
 }
 .inter_Bank p {
   margin-top: 13%;
+}
+.media_box{
+  margin-left: 5%;
+}
 
 }
 
 
 
-}
 @media screen and (max-width: 1093px){
   .sect {
     margin-top: 23%;
@@ -1777,7 +1770,26 @@ input, select {
 
 
 
-
+/* @media screen and (orientation: landscape) {
+  .header {
+    background-color: rgb(24, 0, 82);
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    height: 10%;
+}
+.inter_Bank {
+  margin-left: -56%;
+  margin-top: 27px;
+  width: 16%;
+  height: 10%;
+}
+.input_search input {
+    margin-top: 3.2%;
+    height: 10%;
+}
+} */
 
 /* 48em = 768px */
 
@@ -2430,13 +2442,13 @@ input, select {
 }
 
 .atm_locator {
-    justify-content: space-around;
-    margin-top: 166%;
-    height: max-content;
-    margin-bottom: 5%;
-    width: 90%;
-    margin-left: 5%;
-    overflow: auto;
+  justify-content: space-around;
+  margin-top: 151%;
+  height: max-content;
+  margin-bottom: 5%;
+  width: 90%;
+  margin-left: 5%;
+  overflow: auto;
 }
 .atm_locator_div {
   border: 2pt solid rgb(197, 190, 190);
@@ -2493,14 +2505,17 @@ input, select {
    
    
 }
+.last{
+  height: 33%;
+
+  }
+  .media_box{
+    margin-left: 10%;
+  }
 .foot_media{
   display: none;
 }
 
-.media_box{
-  margin-left: -20%;
-
-}
 .media_box_div{
   background-color:rgba(215, 236, 255, 0.907);;
   clip-path: polygon(0 0, 100% 0, 97% 100%, 0 100%);
@@ -2551,7 +2566,7 @@ margin-left: -20%;
   margin-top: -14%;
 }
 .media_box_div div span {
-  margin-left: 32%;
+  margin-left: 37%;
 }
 .footer div div {
   margin-left: 1%;
@@ -2598,6 +2613,25 @@ margin-left: -20%;
 }
 }
 @media screen and (max-width: 847px){
+  .header {
+    background-color: rgb(24, 0, 82);
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    height: 10%;
+}
+.inter_Bank {
+  margin-left: -56%;
+  margin-top: 27px;
+  width: 16%;
+  height: 10%;
+}
+.input_search input {
+    margin-top: 3.2%;
+    height: 10%;
+}
+
   .chat{
     margin-top: -13.6%;
 }
@@ -2610,9 +2644,7 @@ margin-left: -20%;
   display: flex;
   flex-direction: column;
 }
-.media_box_div div span {
-  margin-left: 24%;
-}
+
 .atm_locator {
     margin-top: 192%;
 }
@@ -2698,6 +2730,14 @@ margin-left: -20%;
 }
 
 @media screen and (max-width: 776px){
+  .header {
+    background-color: rgb(24, 0, 82);
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    height: 7%;
+}
   .chat {
     margin-top: -15%;
     margin-left: 85%;
@@ -2706,12 +2746,17 @@ margin-left: -20%;
     margin-top: 4.4%;
     margin-left: -12%;
 }
-  .inter_Bank {
-    margin-top: 25px;
-    margin-left: -60%;
+.inter_Bank {
+  margin-top: 25px;
+  margin-left: -60%;
+  height: 6%;
+}
+.input_search input {
+  margin-top: 3.4%;
+  height: 6%;
 }
 .media_box_div div span {
-  margin-left: 19%;
+  margin-left: 32%;
 }
 }
 
@@ -2782,6 +2827,15 @@ margin-left: -20%;
 .explore_more1 {
   width: 57%;
 }
+.apple_img {
+  margin-left: -120%;
+}
+.play_img {
+  margin-left: -103%;
+}
+.media_img {
+  margin-left: -521%;
+}
 }
   
 @media screen and (max-width: 702px) {
@@ -2831,9 +2885,7 @@ margin-left: -20%;
   width: 28%;
   margin-left: 3%;
 }
-.media_box_div div span {
-  margin-left: 13%;
-}
+
 .payday-calc-title {
   margin-left: 13%;
 }
@@ -2879,7 +2931,7 @@ margin-left: -20%;
     width: 267px;
 } */
 .media_box_div div span {
-  margin-left: 9%;
+  margin-left: 28%;
 }
 .phone_img {
   margin-left: 28%;
@@ -2995,6 +3047,15 @@ margin-left: -20%;
     overflow: auto;
     margin-top: 68%;
 }
+.apple_img {
+  margin-left: -81%;
+}
+.play_img {
+  margin-left: -65%;
+}
+.media_img {
+  margin-left: -372%;
+}
 
 }
 @media (max-width:603px ) {
@@ -3026,17 +3087,10 @@ margin-left: -20%;
 .carousel-container {
   margin-top: 5%;
 }
-.play_img {
-  margin-left: -95%;
-}
+
 .input_loan {
   margin-left: 31%;
   width: 110%;
-}
-
-
-.apple_img {
-  margin-left: -100%;
 }
 .payday-calc-title {
   margin-left: 3%;
@@ -3079,9 +3133,7 @@ margin-left: -20%;
 .carousel-container1 {
   width: 60%;
 }
-.media_box_div div span {
-  margin-left: 5%;
-}
+
 .img_size_1 {
   width: 340px;
 }
@@ -3144,6 +3196,15 @@ margin-left: -20%;
     overflow: auto;
     margin-top: 88%;
   }
+  .apple_img {
+    margin-left: -50%;
+}
+.play_img {
+  margin-left: -37%;
+}
+.media_img {
+  margin-left: -279%;
+}
   
 }
 
@@ -3181,15 +3242,7 @@ margin-left: -20%;
 .carousel-container1 {
   width: 71%;
 }
-.apple_img {
-  margin-left: -43%;
-}
-.play_img {
-  margin-left: -37%;
-}
-.media_img {
-  margin-left: -373%;
-}
+
 .media_box div::after {
   transform: rotate(3.5deg);
 }
@@ -3230,6 +3283,15 @@ margin-left: -20%;
   position: relative;
   flex-direction: column;
   margin-top: 35%;
+}
+.apple_img {
+  margin-left: -34%;
+}
+.play_img {
+  margin-left: -18%;
+}
+.media_img {
+  margin-left: -206%;
 }
 }
 
@@ -3391,7 +3453,9 @@ margin-left: -20%;
     overflow: auto;
     margin-top: 95%;
   }
-
+  ox_div div span {
+    margin-left: 23%;
+}
 
 }
 
@@ -3939,6 +4003,9 @@ margin-left: -20%;
     margin-top: 20%;
     margin-left: 70%;
 }
+.media_box_div div span {
+  margin-left: 20%;
+}
 }
 
 @media (max-width:370px ) {
@@ -4126,29 +4193,12 @@ margin-left: -20%;
     width: 96%;
     margin-left: -24%;
 }
-.phone_img {
-  margin-left: 16%;
-}
-.apple_img {
-  margin-left: 0%;
-  height: 28px;
-  width: 64px;
-}
-.play_img {
-  margin-left: 10%;
-  height: 38px;
-  width: 67px;
-}
 .media_box_div div span {
-  margin-left: 2%;
-}
-.media_img {
-  height: 25px;
-  width: 21px;
-  margin-left: -23%;
-  margin-top: -14%;
-} 
+ 
+  font-size: 13px;
 
+
+}
 }
 @media (max-width:336px ) {
 .payday-calc-box-2 p {
@@ -4163,6 +4213,7 @@ margin-left: -20%;
     margin-left: 5%;
     font-size: 1.3rem;
 }
+
 }
 
 @media (max-width:331px ) {
