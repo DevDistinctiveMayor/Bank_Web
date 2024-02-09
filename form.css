@@ -1,0 +1,349 @@
+
+body {
+    background-color: rgba(60, 50, 118, 0.812);
+    padding: 0%;
+    margin: 0%;
+    overflow-x: hidden;
+}
+
+#link {
+    padding-top: 10px;
+    background-color: rgb(255, 255, 255);
+    height: max-content; 
+    width:50%;
+    border-radius: 20px;
+    margin-top: 2%;;
+    margin-left: 25%;
+}
+
+.customer {
+    margin-left: 7%;
+    font-size: 35px;
+}
+
+.pinfo {
+    margin-left: 2%;
+    width: 60%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:rgb(2, 6, 123);
+    font-size: 0.9rem;
+    
+}
+
+form {
+    margin-left: 5%;
+   
+    /* display: flex;
+    flex-direction: column; */
+
+}
+.input{
+    width: max-content;
+    background-color: rgba(240, 248, 255, 0.979);
+    border: none;
+    height: 40px;
+    margin: 8px 20px;
+    width: 80%;
+    margin-bottom: 3%;
+}
+label {
+    font-size: 18px;
+    margin-left: 3%;
+}
+.secondclass {
+    padding-top: 0px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.firstclass {
+    background-color: rgba(240, 248, 255, 0.979);
+    border: none;
+    height: 50px;
+    margin: 8px 20px;
+    width: 80%;
+    margin-bottom: 3%;
+}
+
+
+input {
+    /* display: block; */
+    /* width: 50vw; */
+    padding: 0 1.25rem;
+    
+}
+
+input,
+input::placeholder {
+    font: 16px sans-;
+
+}
+
+.state1 {
+    margin-left: 3%;
+    background-color: rgba(240, 248, 255, 0.979);
+    border: none;
+    height: 52px;
+    margin-bottom: 3%;
+    font-size: 17px;
+}
+.state2 {
+    margin-left: 10%;
+    background-color: rgba(240, 248, 255, 0.979);
+    border: none;
+    height: 53px;
+    margin-bottom: 3%;
+    font-size: 17px;
+}
+
+
+
+.thirdclass {
+    font-size: 15px;
+    margin-top: 3%;
+    width: max-content;
+    /* border: none; */
+    padding: 10px;
+    color: aliceblue;
+    margin-left: 35%;
+    background-color: rgb(24, 0, 82);
+    border-radius: 30px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.label1{
+    margin-left: 35%;
+}
+.eop {
+    margin-left: 3%;
+    color: red;
+    font-size: 0.8rem;
+
+}
+.pwda{
+ color:rgb(2, 6, 123);
+ font-size: 0.8rem;
+ margin-left: 3%;
+}
+@media screen and (max-width:1661px ){
+    .label1{
+        margin-left: 32%;
+    }   
+
+}
+
+@media screen and (max-width:1483px ){
+    .label1{
+        margin-left: 35%;
+    }   
+
+}
+@media screen and (max-width:1316px ){
+    .label1{
+        margin-left: 38%;
+    }   
+
+}
+@media screen and (max-width:1146px ){
+    .label1{
+        margin-left: 42%;
+    }   
+    #link {
+        padding-top: 10px;
+        background-color: rgb(255, 255, 255);
+        height: max-content;
+        width: 65%;
+        border-radius: 30px;
+        margin-top: 2%;
+        margin-left: 18%;
+    }
+    /* .filemarg{
+        margin-top: -6%;
+    } */
+
+}
+@media screen and (max-width:1131px ){
+    .label1{
+        margin-left: 34%;
+    }   
+}
+@media screen and (max-width:986px ){
+    .label1{
+        margin-left: 38%;
+    }   
+}
+
+@media screen and (max-width:933px ){
+    .label1{
+        margin-left: 42%;
+    }   
+    #link {
+        padding-top: 10px;
+        background-color: rgb(255, 255, 255);
+        height: max-content;
+        width: 80%;
+        border-radius: 30px;
+        margin-top: 2%;
+        margin-left: 10%;
+    }
+}
+@media screen and (max-width:787px ){
+    .label1{
+        margin-left: 42%;
+    }   
+    #link {
+        padding-top: 10px;
+        background-color: rgb(255, 255, 255);
+        height: max-content;
+        width: 90%;
+        border-radius: 30px;
+        margin-top: 2%;
+        margin-left: 5%;
+    }
+}
+@media screen and (max-width:696px ){
+    .label1{
+        margin-left: 42%;
+    }   
+    #link {
+        padding-top: 10px;
+        background-color: rgb(255, 255, 255);
+        height: max-content;
+        width: 100%;
+        border-radius: 30px;
+        margin-top: 2%;
+        margin-left: 0%;
+    }
+}
+@media screen and (max-width:653px ){
+    .label1{
+        margin-left: 42%;
+    }   
+    #link {
+        padding-top: 10px;
+        background-color: rgb(255, 255, 255);
+        height: max-content;
+        width: 100%;
+        border-radius: 0px;
+        margin-top: 2%;
+        margin-left: 0%;
+    }
+     .filemarg{
+        margin-top: 3%;
+    }
+}
+@media screen and (max-width:510px ){
+    .label1{
+        margin-left: 40%;
+    }   
+    #link {
+        padding-top: 10px;
+        background-color: rgb(255, 255, 255);
+        height: max-content;
+        width: 100%;
+        border-radius: 0px;
+        margin-top: 2%;
+        margin-left: 0%;
+    }
+    .state1 {
+        margin-left: 3%;
+        background-color: rgba(240, 248, 255, 0.979);
+        border: none;
+        height: 52px;
+        margin-bottom: 3%;
+        font-size: 20px;
+        width: 35%;
+    }
+    .state2 {
+        margin-left: 10%;
+        background-color: rgba(240, 248, 255, 0.979);
+        border: none;
+        height: 53px;
+        margin-bottom: 3%;
+        font-size: 20px;
+        width: 33%;
+    }
+     .filemarg{
+        margin-top: 3%;
+    }
+}
+@media screen and (max-width:386px ){
+    #comp {
+        background-color: rgb(24, 0, 82);
+        height: 12%;
+        width: 190%;
+        
+     
+    }
+    #link {
+        padding-top: 10px;
+        background-color: rgb(255, 255, 255);
+        height: max-content;
+        width: max-content;
+        border-radius: 0px;
+        margin-top: 2%;
+        margin-left: 0%;
+    }
+}
+@media screen and (max-width:356px ){
+    #comp {
+        background-color: rgb(24, 0, 82);
+        height: 12%;
+        width: 202%;
+    }
+}
+@media screen and (max-width:338px ){
+    #comp {
+        background-color: rgb(24, 0, 82);
+        height: 12%;
+        width: 216%;
+    }
+}
+@media screen and (max-width:305px ){
+    #comp {
+        background-color: rgb(24, 0, 82);
+        height: 12%;
+        width: 239%;
+    }
+}
+/* @media screen and (max-width:339px ){
+    #comp {
+        background-color: rgb(24, 0, 82);
+        height: 12%;
+       
+    
+}}
+@media screen and (max-width:332px ){
+    #comp {
+        background-color: rgb(24, 0, 82);
+        height: 12%;
+       
+    
+}}
+@media screen and (max-width:315px ){
+    #comp {
+        background-color: rgb(24, 0, 82);
+        height: 12%;
+       
+    
+}} */
+
+
+/* @media (max-width: 700px) {
+
+    #link{
+        padding-top: 30px;
+        background-color: white;
+        height: 100%;
+        width: 100%;
+        border-radius: 30px;
+        margin: 3% 0%;
+        position: center;
+    }
+    
+    
+
+ } */
+
+
+

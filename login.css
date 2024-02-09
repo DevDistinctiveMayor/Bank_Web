@@ -1,0 +1,165 @@
+body{
+    background-color:rgba(60, 50, 118, 0.812) ;
+    margin: 0%;
+    padding: 0%;
+}
+
+#comp{
+    /* background-color:rgba(60, 50, 118, 0.565); */
+    /* padding-top: 100px; */
+    margin-top: 10%;
+    
+    
+ 
+   
+}
+#link{
+    background-color: aliceblue;
+    margin-top: 4%;
+    margin-left: 40%;
+    /* margin: auto; */
+    width: 20%;
+    height: max-content;
+    padding-top: 50px;
+    padding-left: 40px;
+    border-radius: 10%;
+   
+}
+.firstclass{
+    margin: 10px 0px;
+    height: 40px;
+    
+}
+.seconclass{
+    background-color: rgb(24, 0, 82);
+    width: 100px;
+    height: 40px;
+    margin: 30px 0px;
+    color: aliceblue;
+    font-size: 20px;
+}
+.eop {
+    margin-left: 0%;
+    color: red;
+    font-size: 0.8rem;
+
+}
+.pwda{
+ color:rgb(2, 6, 123);
+ font-size: 0.8rem;
+ margin-left: 0%;
+}
+@media screen and (max-width: 1249px) {
+    #link {
+        width: 26%;
+        margin-left: 35%;
+    }
+}
+/* @media screen and (max-width: 1218px) {
+    link {
+        width: 39%;
+        margin-left: 35%;
+    }
+} */
+
+@media screen and (max-width: 1019px) {
+    #link {
+        margin-left: 38%;
+        width: 29%;
+
+    }
+    
+}
+@media screen and (max-width: 974px) {
+    #link {
+        margin-left: 33%;
+        width: 35%;
+    }
+    
+}
+@media screen and (max-width: 896px) {
+    #link {
+        margin-left: 30%;
+        width: 38%;
+    }
+    
+}
+@media screen and (max-width: 836px) {
+    
+    #link {
+        margin-left: 25%;
+        width: 46%;
+    }
+    
+}
+@media screen and (max-width: 736px) {
+    #link {
+        margin-left: 25%;
+        width: 46%;
+    }
+    
+}
+@media screen and (max-width: 650px) {
+    #link {
+        margin-left: 18%;
+        width: 58%;
+    
+    }  
+}
+
+
+@media screen and (max-width: 543px) {
+    #link {
+        margin-left: 22%;
+        width: 55%;
+
+    }
+    
+}
+@media screen and (max-width: 488px) {
+    #link {
+        margin-left: 12%;
+        width: 67%;
+    }
+    
+}
+@media screen and (max-width: 449px) {
+    #link {
+        margin-left: 10%;
+        width: 71%;
+    }
+    
+}
+@media screen and (max-width: 415px) {
+    #link {
+        /* margin-left: 12%; */
+        width: 76%;
+
+    }
+    
+}
+@media screen and (max-width: 409px) {
+    #link {
+        margin-left: 0%;
+        width: 100%;
+        border-radius: 0%;
+
+    }
+    
+}
+@media screen and (max-width: 364px) {
+    #link {
+        margin-left:0%;
+        width: 100%;
+
+    }
+    
+}
+@media screen and (max-width: 321px) {
+    #link {
+        margin-left:0%;
+        width: 100%;
+
+    }
+    
+}
