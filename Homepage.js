@@ -1,63 +1,60 @@
-
 let divs = ["Div1", "Div2", "Div3", "Div4", "Div5"];
-    let visibleDivId = null;
-    function divVisibility(divId) {
-      if(screen.width <= 935) {
-      if(visibleDivId === divId) {
-        visibleDivId = null;
-      
+let visibleDivId = null;
+function divVisibility(divId) {
+  if (screen.width <= 935) {
+    if (visibleDivId === divId) {
+      visibleDivId = null;
+    } else {
+      visibleDivId = divId;
+    }
+    hideNonVisibleDivs();
+  }
+}
+
+function hideNonVisibleDivs() {
+  if (screen.width <= 935) {
+    let i, divId, div;
+    for (i = 0; i < divs.length; i++) {
+      divId = divs[i];
+      div = document.getElementById(divId);
+      if (visibleDivId === divId) {
+        div.style.display = "block";
       } else {
-        visibleDivId = divId;
-      }
-      hideNonVisibleDivs();
-    }
-  }
-
-    function hideNonVisibleDivs() {
-      if(screen.width <= 935) {
-      let i, divId, div;
-      for(i = 0; i < divs.length; i++) {
-        divId = divs[i];
-        div = document.getElementById(divId);
-        if(visibleDivId === divId) {
-          div.style.display = "block";
-        } else {
-          div.style.display = "none";
-        }
+        div.style.display = "none";
       }
     }
   }
+}
 
+const carousel = document.querySelector(".carousel");
+const backgroundImage = document.querySelector(".bg-image");
 
-      const carousel = document.querySelector(".carousel");
-  const backgroundImage = document.querySelector(".bg-image");
+const leftArrow = document.querySelector(".left-arrow");
+const rightArrow = document.querySelector(".right-arrow");
 
-  const leftArrow = document.querySelector(".left-arrow");
-  const rightArrow = document.querySelector(".right-arrow");
+let currentIndex = 0;
+let prevIndex;
+const images = document.querySelectorAll(".carousel-image");
 
-  let currentIndex = 0;
-  let prevIndex;
-  const images = document.querySelectorAll(".carousel-image");
+const totalImages = Object.keys(images).length;
 
-  const totalImages = Object.keys(images).length;
+// Use this in your project, if you're doing it locally
+// const imageWidth = images[1].getBoundingClientRect().x;
 
-  // Use this in your project, if you're doing it locally
-  // const imageWidth = images[1].getBoundingClientRect().x;
+const imageWidth = 520;
+console.log("getbounding1", images[1].getBoundingClientRect());
 
-  const imageWidth = 520;
-  console.log("getbounding1", images[1].getBoundingClientRect());
+leftArrow.addEventListener("click", () => {
+  prevIndex = currentIndex;
+  currentIndex = (currentIndex - 1 + totalImages) % totalImages;
+  carousel.style.transform = `translateX(-${imageWidth}px)`;
+  carousel.insertBefore(images[currentIndex], carousel.firstChild);
 
-  leftArrow.addEventListener("click", () => {
-    prevIndex = currentIndex;
-    currentIndex = (currentIndex - 1 + totalImages) % totalImages;
-    carousel.style.transform = `translateX(-${imageWidth}px)`;
-    carousel.insertBefore(images[currentIndex], carousel.firstChild);
-
-    setTimeout(() => {
-      carousel.style.transform = "";
-      carousel.classList.add("sliding-transition");
-      backgroundImage.src = images[currentIndex].src.slice(0, -6) + "1000";
-    }, 0);
+  setTimeout(() => {
+    carousel.style.transform = "";
+    carousel.classList.add("sliding-transition");
+    backgroundImage.src = images[currentIndex].src.slice(0, -6) + "1000";
+  }, 0);
 
   // setTimeout(() => {
   //   carousel.classList.remove("sliding-transition");
@@ -80,57 +77,51 @@ rightArrow.addEventListener("click", () => {
   }, 500);
 });
 
+let slideIndex = 0;
+let timeoutId = null;
+const slides = document.getElementsByClassName("mySlides");
+const dots = document.getElementsByClassName("dot");
 
+showSlides();
+function currentSlide(index) {
+  slideIndex = index;
+  showSlides();
+}
+function plusSlides(step) {
+  if (step < 0) {
+    slideIndex -= 2;
 
+    if (slideIndex < 0) {
+      slideIndex = slides.length - 1;
+    }
+  }
 
-      let slideIndex = 0;
-      let timeoutId = null;
-      const slides = document.getElementsByClassName("mySlides");
-      const dots = document.getElementsByClassName("dot");
-      
-      showSlides();
-      function currentSlide(index) {
-           slideIndex = index;
-           showSlides();
-      }
-     function plusSlides(step) {
-        
-        if(step < 0) {
-            slideIndex -= 2;
-            
-            if(slideIndex < 0) {
-              slideIndex = slides.length - 1;
-            }
-        }
-        
-        showSlides();
-     }
-      function showSlides() {
-        for(let i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-          dots[i].classList.remove('active');
-        }
-        slideIndex++;
-        if(slideIndex > slides.length) {
-          slideIndex = 1
-        }
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].classList.add('active');
-         if(timeoutId) {
-            clearTimeout(timeoutId);
-         }
-        timeoutId = setTimeout(showSlides, 2000); // Change image every 5 seconds
-      } 
-   
-           
-           function calculateAmount(val) {  
-               let naira = "&#8358;"
-               var tot_price = val * (5);
-               var divobj = document.getElementById('tot_amount');  
-               divobj.value = 
-               document.getElementById("nai").innerHTML = naira + tot_price.toLocaleString();
-           }  
-           
+  showSlides();
+}
+function showSlides() {
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+    dots[i].classList.remove("active");
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {
+    slideIndex = 1;
+  }
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].classList.add("active");
+  if (timeoutId) {
+    clearTimeout(timeoutId);
+  }
+  timeoutId = setTimeout(showSlides, 2000); // Change image every 5 seconds
+}
+
+function calculateAmount(val) {
+  let naira = "&#8358;";
+  var tot_price = val * 5;
+  var divobj = document.getElementById("tot_amount");
+  divobj.value = document.getElementById("nai").innerHTML =
+    naira + tot_price.toLocaleString();
+}
 
 const carousel_1 = document.querySelector(".carousel1");
 const backgroundImage_1 = document.querySelector(".bg-image");
@@ -143,7 +134,6 @@ let prevIndex_1;
 const images_1 = document.querySelectorAll(".carousel-image1");
 
 const totalImages_1 = Object.keys(images_1).length;
-
 
 const imageWidth_1 = 520;
 console.log("getbounding1", images[1].getBoundingClientRect());
@@ -180,10 +170,3 @@ rightArrow_1.addEventListener("click", () => {
     carousel_1.style.transform = "";
   }, 500);
 });
-
- 
-
-   
-
-
-
